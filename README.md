@@ -15,18 +15,14 @@ Additional tools/libraries: Lombok, Mapstruct, Swagger, Flyway
 Available functionality:
 - Create a new account:
 POST api/v1/accounts which can return response HTTP status code 201, 400, 409 or 500
-
 - Get an existing account:
-GET api/v1/accounts/{accountId} which can return response HTTP status code: 200, 404 or 500
-
+GET api/v1/accounts/{accountId} which can return response HTTP status code 200, 404 or 500
 - Get all accounts:
-GET api/v1/accounts which can return response HTTP status code: 200 or 500
-
+GET api/v1/accounts which can return response HTTP status code 200 or 500
 - Update an existing account:
-PUT api/v1/accounts/{accountId} which can return response HTTP status code: 200, 400, 404, 409 or 500
-
+PUT api/v1/accounts/{accountId} which can return response HTTP status code 200, 400, 404, 409 or 500
 - Delete an existing account:
-DELETE api/v1/accounts/{accountId} which can return response HTTP status code: 200, 404 or 500
+DELETE api/v1/accounts/{accountId} which can return response HTTP status code 200, 404 or 500
 
 Setup:
 - Import the project as Gradle one;
