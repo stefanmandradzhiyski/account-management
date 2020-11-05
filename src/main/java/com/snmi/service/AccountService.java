@@ -58,7 +58,8 @@ public class AccountService {
     public WholeAccountDTO updateAccount(Long accountId, AccountDTO accountDTO) {
         LOGGER.info(String.format("Updating an account with id=%s", accountId));
         Account existingAccount = accountComponent.findByIdOrThrowNotFoundException(accountId);
-        existingAccount.updateAccount(accountDTO);
+        existingAccount.updateAccount(accountDTO.getFirstName(), accountDTO.getLastName(), accountDTO.getEmail(),
+                accountDTO.getDateOfBirth());
         LOGGER.info("Account properties have been updated successfully");
 
         return accountMapper.toWholeAccountDTO(accountRepository.save(existingAccount));

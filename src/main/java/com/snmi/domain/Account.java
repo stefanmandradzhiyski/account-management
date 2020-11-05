@@ -44,10 +44,10 @@ public class Account extends BaseEntity {
     @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
 
-    public void updateAccount(AccountDTO accountDTO) {
-        firstName = accountDTO.getFirstName();
-        lastName = accountDTO.getLastName();
-        email = accountDTO.getEmail();
-        dateOfBirth = accountDTO.getDateOfBirth();
+    public void updateAccount(String firstName, String lastName, String email, LocalDate dateOfBirth) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.dateOfBirth = dateOfBirth;
     }
 }
